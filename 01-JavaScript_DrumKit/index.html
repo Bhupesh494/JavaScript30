@@ -45,6 +45,15 @@
         <kbd>L</kbd>
         <span class="sound">tink</span>
       </div>
+      <!-- <div
+        class="key"
+        onmouseover="PlaySound('mySound')"
+        onmouseout="StopSound('mySound')"
+      >
+        Hover Over Me To Play
+      </div>
+
+      <audio id="mySound" src="./sounds/clap.wav" /> -->
     </div>
 
     <audio data-key="65" src="sounds/clap.wav"></audio>
@@ -79,6 +88,19 @@
         key.addEventListener("transitionend", removeTransition)
       );
       window.addEventListener("keydown", playSound);
+
+      // ? Experiment
+      // function PlaySound(soundobj) {
+      //   var thissound = document.getElementById(soundobj);
+      //   // console.log(thissound.getAttributeNames());
+      //   thissound.play();
+      // }
+
+      // function StopSound(soundobj) {
+      //   var thissound = document.getElementById(soundobj);
+      //   thissound.pause();
+      //   thissound.currentTime = 0;
+      // }
     </script>
   </body>
 </html>
